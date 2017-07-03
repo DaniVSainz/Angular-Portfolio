@@ -13,6 +13,14 @@ export const PAGES_MENU = [
             order: 0
           }
         }
+      },
+      {
+        path: 'landing',
+        data:{
+          menu:{
+            title:'Landing',
+          }
+        }
       }
     ]
   }
