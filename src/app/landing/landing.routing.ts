@@ -5,7 +5,8 @@ import { LandingComponent } from './landing.component';
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent
+    component: LandingComponent,
+    loadChildren: 'app/landing/landing.module#LandingModule'
   }
 ];
 
