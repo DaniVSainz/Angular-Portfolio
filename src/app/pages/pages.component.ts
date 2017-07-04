@@ -31,13 +31,13 @@ import { PAGES_MENU } from './pages.menu';
 export class Pages {
 
   constructor(private _menuService: BaMenuService,) {
-    $('ba-sidebar').css({'display':''});
-    $('ba-page-top').css({'display':''});
+    // $('ba-sidebar').css({'display':''});
+    // $('ba-page-top').css({'display':''});
   }
 
   ngOnInit() {
     this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
-        $('ba-sidebar').css({'display':''});
-    $('ba-page-top').css({'display':''});
+    //     $('ba-sidebar').css({'display':''});
+    // $('ba-page-top').css({'display':''});
   }
 }

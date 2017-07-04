@@ -1,13 +1,17 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule }  from '@angular/router';
 
 import { LandingComponent } from './landing.component';
+import { ModuleWithProviders } from '@angular/core';
 
-const routes: Routes = [
+// noinspection TypeScriptValidateTypes
+export const routes: Routes = [
   {
-    path: '',
+    path: 'landing',
     component: LandingComponent,
-    loadChildren: 'app/landing/landing.module#LandingModule'
+    children: [
+      //{ path: 'treeview', component: TreeViewComponent }
+    ]
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);

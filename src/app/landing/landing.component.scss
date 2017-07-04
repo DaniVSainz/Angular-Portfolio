@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100");
+
+.container {
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Indie Flower', cursive;*/
+  height: 100vh;
+  width: 100%;
+  /*justify-content: center;
+  align-items: center;
+  display: flex;*/
+  background: url('/assets/images/interior23.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*transition: background 2s linear;*/
+}
+
+.text1 {
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+  padding: 15px;
+  font-weight: 100;
+  font-size: 35px;
+  color: #fafafa;
+  font-weight: bold;
+}
+
+.dud {
+  color: #757575;
+}

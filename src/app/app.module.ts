@@ -16,6 +16,7 @@ import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
+import {LandingModule} from './landing/landing.module';
 
 
 // Application wide providers
@@ -39,6 +40,7 @@ export type StoreType = {
     App
   ],
   imports: [ // import Angular's modules
+    LandingModule,
     BrowserModule,
     HttpModule,
     RouterModule,

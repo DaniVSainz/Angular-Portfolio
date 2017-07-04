@@ -15,4 +15,6 @@ import { routing } from './landing.routing';
     LandingComponent
   ]
 })
-export class LandingModule {}
+export class LandingModule {
+
+}
