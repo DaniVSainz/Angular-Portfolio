@@ -13,12 +13,7 @@ import { layoutPaths } from './theme/theme.constants';
 @Component({
   selector: 'app',
   styleUrls: ['./app.component.scss'],
-  template: `
-    <main [class.menu-collapsed]="isMenuCollapsed" baThemeRun>
-      <div class="additional-bg"></div>
-      <router-outlet></router-outlet>
-    </main>
-  `
+  templateUrl: '/app.component.html',
 })
 export class App {
 
