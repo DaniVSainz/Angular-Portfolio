@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "start" : "npm install",
     "ng": "ng",
     "rimraf": "rimraf",
     "changelog": "standard-changelog",
