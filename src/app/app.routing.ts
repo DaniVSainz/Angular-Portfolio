@@ -4,7 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
-  { path: 'pages', loadChildren: 'pages/pages.module#PagesModule' }
+  { path: 'pages', redirectTo:'pages' },
   // { path: '**', redirectTo: 'pages/dashboard' }
 ];
 

@@ -6,22 +6,14 @@ export const PAGES_MENU = [
         path: 'dashboard',
         data: {
           menu: {
-            title: 'Home',
-            icon: 'ion-android-home',
+            title: 'Profile',
+            icon: 'ion-person',
             selected: false,
             expanded: false,
             order: 0
           }
         }
       }
-      // {
-      //   path: 'landing',
-      //   data:{
-      //     menu:{
-      //       title:'Landing',
-      //     }
-      //   }
-      // }
     ]
   }
 ]

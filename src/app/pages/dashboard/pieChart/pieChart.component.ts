@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-
+// import {IconService} from '../../theme/services/'
 import {PieChartService} from './pieChart.service';
 
 import 'easy-pie-chart/dist/jquery.easypiechart.js';

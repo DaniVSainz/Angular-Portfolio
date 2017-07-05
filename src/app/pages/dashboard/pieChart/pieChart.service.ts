@@ -12,9 +12,9 @@ export class PieChartService {
     return [
       {
         color: pieColor,
-        description: 'dashboard.new_visits',
-        stats: '57,820',
-        icon: 'person',
+        description: 'Commits',
+        stats: '1100+',
+        icon: 'socicon-github',
       }, {
         color: pieColor,
         description: 'dashboard.purchases',

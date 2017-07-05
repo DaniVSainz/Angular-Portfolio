@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 declare var jquery:any;
 declare var $ :any;
 
@@ -9,7 +10,7 @@ declare var $ :any;
 })
 export class LandingComponent implements OnInit {
 
-  constructor() {
+  constructor(public router:Router) {
     // $('ba-sidebar').css({'display':'none'});
     // $('ba-page-top').css({'display':'none'});
    }
@@ -103,8 +104,9 @@ const phrases = [
   'Welcome to my Portfolio!',
   'My name is Daniel',
   'And I probably code too much',
-  "But that's okay...",
-  "I hope you enjoy my site",
+  "I also have a github addiction, with over 1100 commits in the last 5 months",
+  "But that's okay because I love it!",
+  "Thanks for visiting",
   'Bye!'
   // 'between knowing the path',
   // 'and walking the path'
@@ -115,17 +117,23 @@ const fx = new TextScramble(el)
 
 let counter = 0
 const next = () => {
-  if(counter < phrases.length){
+  if(counter < phrases.length && counter != 3){
     fx.setText(phrases[counter]).then(() => {
     setTimeout(next, 800)
+  })
+  }else if( counter == 3 ){
+    fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 1600)
     })
   }else{
     $('.text').remove();
+    this.router.navigate(['/pages']);
   }
   counter = (counter + 1)
 }
 
 next()
    }
+
 
 }
