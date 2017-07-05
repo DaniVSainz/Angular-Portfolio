@@ -13,6 +13,18 @@ export const PAGES_MENU = [
             order: 0
           }
         }
+      },
+      {
+        path: 'projects',
+        data: {
+          menu: {
+            title: 'Projects',
+            icon: 'ion-laptop',
+            selected: false,
+            expanded: false,
+            order: 0
+           }
+      }
       }
     ]
   }
