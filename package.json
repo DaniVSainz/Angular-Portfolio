@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm run clean:dist && webpack --config config/webpack.prod.js --progress --profile --colors --display-error-details --display-cached --bail",
     "ng": "ng",
     "rimraf": "rimraf",
     "changelog": "standard-changelog",
