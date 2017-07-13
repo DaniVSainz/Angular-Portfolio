@@ -118,6 +118,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   if(counter < phrases.length && counter != 3){
+  // $(".text").css({'margin':'300px !important;'});
     fx.setText(phrases[counter]).then(() => {
     setTimeout(next, 800)
   })
