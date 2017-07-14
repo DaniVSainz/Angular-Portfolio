@@ -5,8 +5,8 @@
     <div class="canvas-holder">
       <canvas class="chart-area" width="300px" height="300px"></canvas>
       <div class="traffic-text">
-        1100+ Commits
-        <span translate>Over 5 Months</span>
+        PlaceHolder
+        <span translate></span>
       </div>
     </div>
     <div class="traffic-legend"></div>
@@ -14,7 +14,7 @@
 
   <div class="channels-info">
     <div>
-      <div class="channels-info-item"> <span>Profenciency</span></div>
+      <div class="channels-info-item"></div>
       <div class="channels-info-item" *ngFor="let item of doughnutData">
         <div class="legend-color" [ngStyle]="{'background-color': item.color }"></div>
         <p>{{ item.label }}<span class="channel-number">+{{ item.percentage }}%</span></p>
