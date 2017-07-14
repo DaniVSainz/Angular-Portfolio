@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'danielAbout',
-  template: `<strong>My page content here</strong>`,
+  templateUrl: './danielAbout.html',
+  styleUrls: ['./danielAbout.scss']
 })
 export class DanielAboutComponent {
   constructor() {}

@@ -23,8 +23,20 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 0
-           }
-      }
+          }
+        }
+      },
+      {
+        path: 'about',
+        data: {
+          menu: {
+            title: 'About Me',
+            icon: 'ion-person',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
       }
     ]
   }

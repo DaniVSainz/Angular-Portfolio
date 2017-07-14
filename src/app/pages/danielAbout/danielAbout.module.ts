@@ -15,4 +15,4 @@ import { routing } from './danielAbout.routing';
     DanielAboutComponent
   ]
 })
-export class NewModule {}
+export class DanielAboutModule {}
