@@ -113,7 +113,7 @@ export class LandingComponent implements OnInit {
         })
       }else{
         $('.text').remove();
-        // this.router.navigate(['/pages']);
+        this.router.navigate(['/pages']);
       }
       counter = (counter + 1)
     }
