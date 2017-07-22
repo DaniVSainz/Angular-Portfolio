@@ -54,7 +54,7 @@ $card-header-font-size: 16px;
 
 .card {
   > .card-body {
-    background-color: rgba(0, 0, 0, 0.2); //this was added custom
+    background-color: $bootstrap-panel-header-bg; //this was added custom
     padding: 15px 22px;
     height: 100%;
   }

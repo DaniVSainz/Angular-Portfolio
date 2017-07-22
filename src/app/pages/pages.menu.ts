@@ -6,8 +6,8 @@ export const PAGES_MENU = [
         path: 'dashboard',
         data: {
           menu: {
-            title: 'Profile',
-            icon: 'ion-person',
+            title: 'Coding Skills',
+            icon: 'ion-connection-bars',
             selected: false,
             expanded: false,
             order: 0

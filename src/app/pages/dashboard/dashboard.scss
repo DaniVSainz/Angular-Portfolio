@@ -26,14 +26,16 @@
 //   background-color: rgba(255,255,255,0.18)
 // }
 
-.my-div{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  // background-color:white;
+// .my-div{
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   // background-color:white;
+// }
+.dan-card-image{
+  z-index: 1;
 }
-
 
 
 // Image Stuff
@@ -65,7 +67,7 @@
   position: relative;
   text-align: center;
   width: 100%;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 5%;
 }
 
