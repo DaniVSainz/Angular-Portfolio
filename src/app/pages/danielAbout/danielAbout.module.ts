@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgaModule } from '../../theme/nga.module';
 
 import { DanielAboutComponent } from './danielAbout.component';
 import { routing } from './danielAbout.routing';
@@ -9,7 +10,8 @@ import { routing } from './danielAbout.routing';
   imports: [
     CommonModule,
     FormsModule,
-    routing
+    routing,
+    NgaModule
   ],
   declarations: [
     DanielAboutComponent
