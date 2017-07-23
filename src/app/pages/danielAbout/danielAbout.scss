@@ -6,6 +6,17 @@ p{
     font-size: 20px;
 }
 
+
+.my-card{
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.figure-div{
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
 //
 //
 //
@@ -16,12 +27,14 @@ figure.snip1368 {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 10px auto;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
   color: #ffffff;
+  opacity: 0.85;
   line-height: 1.4em;
+  border-radius: 3%;
 }
 figure.snip1368 * {
   -webkit-box-sizing: border-box;
@@ -56,7 +69,7 @@ figure.snip1368 h3:before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 315px 55px 0;
+  border-width: 0 315px 80px 0;
   border-color: transparent #212121 transparent transparent;
 }
 figure.snip1368 figcaption {
@@ -109,4 +122,57 @@ figure.snip1368.hover figcaption {
 /* Demo purposes only */
 body {
   background-color: #212121;
+}
+
+//  BUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
+//  BUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
+//  BUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
+//  BUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
+//  BUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+.snip1293 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px 40px 20px;
+  display: inline-block;
+  margin: 12px 25px;
+  font-weight: 300;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(bottom, #262626 0px, #404040 10px, #262626 10px, #333333 100%);
+  background-image: linear-gradient(to top, #262626 0px, #404040 10px, #262626 10px, #333333 100%);
+  box-shadow: 1px 1px 2px -2px rgba(255, 255, 255, 0.8) inset, -1px -1px 2px -2px rgba(255, 255, 255, 0.3) inset, 1px 1px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.snip1293:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-radius: 0 0 5px 5px;
+  background-color: #94c6e7;
+  mix-blend-mode: color;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.snip1293:hover:after,
+.snip1293.hover:after {
+  width: 100%;
+}
+.snip1293:active:after {
+  height: 100%;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+  padding: 50px 0;
 }
