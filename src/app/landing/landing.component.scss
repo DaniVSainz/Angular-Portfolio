@@ -8,11 +8,9 @@
   /*justify-content: center;
   align-items: center;
   display: flex;*/
-  background: url('/assets/images/interior23.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+  overflow-x: hidden;
+
   /*transition: background 2s linear;*/
 }
 
@@ -31,7 +29,6 @@
 }
 
 .text{
-  padding-bottom: 50px !important;
   font-family: 'Roboto Mono', monospace;
   font-size: 35px;
   font-weight: bold;
@@ -48,4 +45,8 @@
   top: 3%;
   left: 3%;
 
+}
+
+.col-sm-12 .text{
+ font-size: 10px; 
 }
