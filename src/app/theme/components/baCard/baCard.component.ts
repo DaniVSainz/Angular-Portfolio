@@ -1,4 +1,6 @@
 import {Component, Input} from '@angular/core';
+import {BaCardBlurHelper} from './baCardBlurHelper.service';
+import {BaCardBlur} from './baCardBlur.directive';
 
 @Component({
   selector: 'ba-card',

@@ -4,7 +4,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgUploaderModule } from 'ngx-uploader';
 import { AppTranslationModule } from '../app.translation.module';
-
+// import {BaCardBlurHelper} from './components/baCard/baCardBlurHelper.service';
 import {
   BaThemeConfig
 } from './theme.config';
@@ -28,7 +28,8 @@ import {
   BaPageTop,
   BaPictureUploader,
   BaSidebar,
-  BaFileUploader
+  BaFileUploader,
+  // BaCardBlurHelper
 } from './components';
 
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
