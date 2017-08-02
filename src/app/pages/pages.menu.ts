@@ -25,26 +25,26 @@ export const PAGES_MENU = [
             order: 0
           }
         },
-        children: [
-          {
-            path: 'ruby',
-            data: {
-              menu: {
-                title: 'Ruby On Rails',
-              }
-            },
-            children: [
-          {
-            path: 'ruby/relicious',
-            data: {
-              menu: {
-                title: ' Relicious',
-              }
-            },
-          }
-        ]
-          }
-        ]
+        // children: [
+        //   {
+        //     path: 'ruby',
+        //     data: {
+        //       menu: {
+        //         title: 'Ruby On Rails',
+        //       }
+        //     },
+        //     children: [
+        //   {
+        //     path: 'ruby/relicious',
+        //     data: {
+        //       menu: {
+        //         title: ' Relicious',
+        //       }
+        //     },
+        //   }
+        // ]
+        //   }
+        // ]
       },
       {
         path: 'about',

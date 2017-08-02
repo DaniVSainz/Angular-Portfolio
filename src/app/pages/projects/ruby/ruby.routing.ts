@@ -1,17 +1,15 @@
 import { Routes, RouterModule }  from '@angular/router';
 
-import { ProjectsComponent } from './projects.component';
+import { RubyComponent } from './ruby.component';
 import { ModuleWithProviders } from '@angular/core';
-
 
 // noinspection TypeScriptValidateTypes
 export const routes: Routes = [
   {
     path: '',
-    component: ProjectsComponent,
+    component: RubyComponent,
     children: [
       //{ path: 'treeview', component: TreeViewComponent }
-      { path: 'ruby', loadChildren: './ruby.module#RubyModule'}
     ]
   }
 ];
