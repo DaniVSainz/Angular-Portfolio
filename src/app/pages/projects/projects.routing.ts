@@ -11,7 +11,7 @@ export const routes: Routes = [
     component: ProjectsComponent,
     children: [
       //{ path: 'treeview', component: TreeViewComponent }
-      { path: 'ruby', loadChildren: './ruby.module#RubyModule'}
+      { path: 'ruby', loadChildren: './ruby/ruby.module#RubyModule'}
     ]
   }
 ];

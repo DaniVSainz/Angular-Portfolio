@@ -29,6 +29,8 @@ export const routes: Routes = [
       { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
       { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule' },
       { path: 'about', loadChildren: './danielAbout/danielAbout.module#DanielAboutModule' }
+      // { path: 'ruby', loadChildren: '.ruby/ruby.module#RubyModule'}
+
 
     ]
   }
