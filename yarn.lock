@@ -299,6 +299,10 @@ angular2-datatable@0.6.0:
   dependencies:
     lodash "^4.0.0"
 
+angulartics-google-analytics@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/angulartics-google-analytics/-/angulartics-google-analytics-0.4.0.tgz#af32db0d0aa704d05836acea72f069f0911b7a51"
+
 animate.css@3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.5.2.tgz#91e668dc069a808e5e499514867b97aae0166c36"
@@ -3355,6 +3359,7 @@ jade@~1.11.0:
     jstransformer "0.0.2"
     mkdirp "~0.5.0"
     transformers "2.1.0"
+    uglify-js "^2.4.19"
     void-elements "~2.0.1"
     with "~4.0.0"
 
