@@ -13,7 +13,7 @@ export const routes: Routes = [
       //{ path: 'treeview', component: TreeViewComponent }
       { path: '', redirectTo: 'projectspage', pathMatch: 'full' },
       { path: 'ruby', loadChildren: './ruby/ruby.module#RubyModule'},
-      { path: 'projectspage', loadChildren: './projectspage/Projects-page.module#ProjectsPageModule'}
+      { path: 'projectspage', loadChildren: './projectsPage/projects-page.module#ProjectsPageModule'}
     ]
   }
 ];
