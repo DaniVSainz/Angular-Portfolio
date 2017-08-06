@@ -54,6 +54,7 @@
     "ckeditor": "4.7.1",
     "core-js": "2.5.0",
     "easy-pie-chart": "2.1.7",
+    "enhanced-resolve": "^3.3.0",
     "font-awesome": "4.7.0",
     "fullcalendar": "3.4.0",
     "google-maps": "3.2.1",
