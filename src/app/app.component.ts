@@ -1,5 +1,6 @@
 import { Component, ViewContainerRef } from '@angular/core';
 import * as $ from 'jquery';
+import { Angulartics2GoogleAnalytics } from 'angulartics2';
 
 import { GlobalState } from './global.state';
 import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
@@ -28,7 +29,8 @@ export class App {
               private _imageLoader: BaImageLoaderService,
               private _spinner: BaThemeSpinner,
               private viewContainerRef: ViewContainerRef,
-              private themeConfig: BaThemeConfig) {
+              private themeConfig: BaThemeConfig,
+              angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
 
     themeConfig.config();
 
