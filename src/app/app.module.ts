@@ -19,7 +19,6 @@ import { PagesModule } from './pages/pages.module';
 import {LandingModule} from './landing/landing.module';
 
 // My stuff
-import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -52,7 +51,6 @@ export type StoreType = {
     NgbModule.forRoot(),
     PagesModule,
     routing,
-    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS
