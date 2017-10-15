@@ -1,11 +1,14 @@
 import { Component, ViewContainerRef } from '@angular/core';
 import * as $ from 'jquery';
 import { Angulartics2GoogleAnalytics } from 'angulartics2';
+import {Router, NavigationEnd} from "@angular/router";
+import {GoogleAnalyticsEventsService} from "./google-analytics-events.service";
 
 import { GlobalState } from './global.state';
 import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
 import { BaThemeConfig } from './theme/theme.config';
 import { layoutPaths } from './theme/theme.constants';
+declare let ga: Function;
 
 /*
  * App Component
@@ -30,7 +33,14 @@ export class App {
               private _spinner: BaThemeSpinner,
               private viewContainerRef: ViewContainerRef,
               private themeConfig: BaThemeConfig,
-              angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
+              public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
+                this.router.events.subscribe(event => {
+                  if (event instanceof NavigationEnd) {
+                    ga('set', 'page', event.urlAfterRedirects);
+                    ga('send', 'pageview');
+                  }
+                }
+              );
 
     themeConfig.config();
 
@@ -40,6 +50,8 @@ export class App {
       this.isMenuCollapsed = isCollapsed;
     });
   }
+
+
 
   public ngAfterViewInit(): void {
     // hide spinner once all loaders are completed
