@@ -88,11 +88,10 @@ export class LandingComponent implements OnInit {
     const phrases = [
       'Welcome to my Portfolio!',
       'My name is Daniel',
-      'And I probably code too much',
-      "I also have a github addiction, with over 1100 commits in the last 5 months",
+      "I'm absolutely passionate about programming",
+      "This has led me to a github with 2000~ commits the last year in just personal projects",
       "But that's okay because I love it!",
-      "Thanks for visiting",
-      'Bye!'
+      "Thanks for visiting!,Bye!",
       // 'between knowing the path',
       // 'and walking the path'
     ]
@@ -105,11 +104,11 @@ export class LandingComponent implements OnInit {
       if(counter < phrases.length && counter != 3){
       // $(".text").css({'margin':'300px !important;'});
         fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 800)
+        setTimeout(next, 1000)
       })
       }else if( counter == 3 ){
         fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 1600)
+        setTimeout(next, 1900)
         })
       }else{
         $('.text').remove();
