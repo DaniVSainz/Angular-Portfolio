@@ -83,7 +83,7 @@ $card-header-font-size: 16px;
 .my-card-header {
   color: $content-text;
   border-bottom: $bootstrap-panel-header-border;
-  height: 80px;
+  height: 60px;
   font-size: $card-header-font-size;
   $vertical-padding: ($card-title-height - $card-header-font-size) / 2;
   padding: 5px;
