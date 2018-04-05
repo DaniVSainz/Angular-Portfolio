@@ -7,26 +7,11 @@ import { ModuleWithProviders } from '@angular/core';
 
 export const routes: Routes = [
   {
-    path: 'login',
-    loadChildren: 'app/pages/login/login.module#LoginModule'
-  },
-  {
-    path: 'register',
-    loadChildren: 'app/pages/register/register.module#RegisterModule'
-  },
-  {
     path: 'pages',
     component: Pages,
     children: [
       { path: '', redirectTo: 'about', pathMatch: 'full' },
-      { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-      { path: 'editors', loadChildren: './editors/editors.module#EditorsModule' },
-      { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
-      { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-      { path: 'ui', loadChildren: './ui/ui.module#UiModule' },
-      { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
-      { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
-      { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
+      // { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule' },
       { path: 'about', loadChildren: './danielAbout/danielAbout.module#DanielAboutModule' }
       // { path: 'ruby', loadChildren: '.ruby/ruby.module#RubyModule'}
