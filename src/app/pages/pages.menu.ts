@@ -16,10 +16,10 @@ export const PAGES_MENU = [
       },
       {
         path: 'projects',
-        title: 'Projects',
+        title: 'Projects & Skills',
         data: {
           menu: {
-            title: 'Projects',
+            title: 'Projects & Skills',
             icon: 'ion-laptop',
             selected: false,
             expanded: false,
@@ -31,7 +31,7 @@ export const PAGES_MENU = [
             path: 'projectspage',
             data: {
               menu: {
-                title: 'Projects',
+                title: 'Projects & Skills',
                 icon: 'ion-hammer',
                 selected: false,
                 expanded: false,
