@@ -1,3 +1,4 @@
+import { CurrentProjectComponent } from './current-project/current-project.component';
 import { Routes, RouterModule }  from '@angular/router';
 
 import { ProjectsComponent } from './projects.component';
@@ -13,6 +14,7 @@ export const routes: Routes = [
       //{ path: 'treeview', component: TreeViewComponent }
       { path: '', redirectTo: 'projectspage', pathMatch: 'full' },
       { path: 'ruby', loadChildren: './ruby/ruby.module#RubyModule'},
+      { path: 'currentproject', component:CurrentProjectComponent},
       { path: 'projectspage', loadChildren: './projectsPage/projects-page.module#ProjectsPageModule'}
     ]
   }

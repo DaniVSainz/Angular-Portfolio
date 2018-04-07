@@ -40,6 +40,18 @@ export const PAGES_MENU = [
             }
           },
           {
+            path: 'currentproject',
+            data: {
+              menu: {
+                title: 'CurrentProject',
+                icon: '',
+                selected: false,
+                expanded: false,
+                order: 0
+              }
+            }
+          },
+          {
             path: 'ruby',
             data: {
               menu: {
