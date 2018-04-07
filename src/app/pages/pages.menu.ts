@@ -43,7 +43,7 @@ export const PAGES_MENU = [
             path: 'currentproject',
             data: {
               menu: {
-                title: 'CurrentProject',
+                title: 'Current Project',
                 icon: '',
                 selected: false,
                 expanded: false,
