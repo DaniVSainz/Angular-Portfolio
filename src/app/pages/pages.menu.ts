@@ -3,11 +3,11 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: 'dashboard',
+        path: 'resume',
         data: {
           menu: {
-            title: 'Coding Skills',
-            icon: 'ion-connection-bars',
+            title: 'Resume',
+            icon: 'ion-clipboard',
             selected: false,
             expanded: false,
             order: 0
