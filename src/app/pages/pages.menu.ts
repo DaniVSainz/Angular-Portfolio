@@ -28,6 +28,18 @@ export const PAGES_MENU = [
         },
         children: [
           {
+            path: 'projectspage',
+            data: {
+              menu: {
+                title: 'Resume',
+                icon: 'ion-clipboard',
+                selected: false,
+                expanded: false,
+                order: 0
+              }
+            }
+          },
+          {
             path: 'ruby',
             data: {
               menu: {
