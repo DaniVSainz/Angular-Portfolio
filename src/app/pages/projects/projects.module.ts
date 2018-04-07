@@ -5,6 +5,7 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { ProjectsComponent } from './projects.component';
 import { routing } from './projects.routing';
+import { CurrentProjectComponent } from './current-project/current-project.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { routing } from './projects.routing';
     NgaModule,
   ],
   declarations: [
-    ProjectsComponent
+    ProjectsComponent,
+    CurrentProjectComponent
   ]
 })
 export class ProjectsModule {
