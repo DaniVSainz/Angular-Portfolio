@@ -55,6 +55,7 @@
 
 .socicon-github {
   @include socicon($github-color, "Q");
+  background-color: black;
 }
 
 .socicon-stackoverflow {
