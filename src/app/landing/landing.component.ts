@@ -112,7 +112,9 @@ export class LandingComponent implements OnInit {
         })
       }else{
         $('.text').remove();
-        this.router.navigate(['/pages']);
+        if(this.router.url=='/landing'){
+          this.router.navigate(['/pages/projects']);
+        }
       }
       counter = (counter + 1)
     }

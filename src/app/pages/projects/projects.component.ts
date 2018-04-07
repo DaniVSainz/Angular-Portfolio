@@ -13,7 +13,6 @@ export class ProjectsComponent implements OnInit {
   constructor(private _menuService: BaMenuService) { }
 
   ngOnInit() {
-    console.log(<Routes>PAGES_MENU)
     this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
   }
 
