@@ -7,11 +7,19 @@
   font-size: 30px;
 }
 
+
+
 .my-card{
+  height: 100%;
   padding: 0;
   display: flex;
   flex-direction: column;
 }
+.carousel-img{
+  height:10%;
+  width:10%;
+}
+
 .my-div{
   width: 100%;
   height: 100%;
@@ -37,7 +45,7 @@
 }
 
 
-img { 
+.my-card-header-img { 
   margin: 0 auto;
   display: flex;
   height:64px;
