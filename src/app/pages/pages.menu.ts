@@ -31,8 +31,8 @@ export const PAGES_MENU = [
             path: 'projectspage',
             data: {
               menu: {
-                title: 'Resume',
-                icon: 'ion-clipboard',
+                title: 'Projects',
+                icon: 'ion-hammer',
                 selected: false,
                 expanded: false,
                 order: 0
