@@ -1,3 +1,6 @@
+import { PAGES_MENU } from './../pages.menu';
+import { Routes } from '@angular/router';
+import { BaMenuService } from './../../theme/services/baMenu/baMenu.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _menuService: BaMenuService) { }
 
   ngOnInit() {
+    console.log(<Routes>PAGES_MENU)
+    this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
   }
 
 }

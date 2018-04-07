@@ -1,14 +1,16 @@
 <div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
     <div *ngIf="title && !myCard" class="card-header clearfix">
         <div class="my-header">
-            <img src="{{href}}" alt="">
+            <!-- <img src="{{href}}" alt=""> -->
             <h3 class="card-title" translate>{{title}}</h3>
         </div>
     </div>
     <div *ngIf="title && myCard" class="my-card-header clearfix">
             <div class="my-header">
                 <img src="{{href}}" alt="">
-                <h3 class="card-title" translate>{{title}}</h3>
+                <div class="alingh3">
+                    <h3 class="card-title" translate>{{title}}</h3>
+                </div>
             </div>
         </div>
     <div class="card-body">
