@@ -32,7 +32,6 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'Projects & Skills',
-                icon: 'ion-hammer',
                 selected: false,
                 expanded: false,
                 order: 0
