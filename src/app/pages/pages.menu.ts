@@ -52,6 +52,18 @@ export const PAGES_MENU = [
             }
           },
           {
+            path: 'javascript',
+            data: {
+              menu: {
+                title: 'Javascript Projects',
+                icon: '',
+                selected: false,
+                expanded: false,
+                order: 0
+              }
+            }
+          },
+          {
             path: 'ruby',
             data: {
               menu: {
