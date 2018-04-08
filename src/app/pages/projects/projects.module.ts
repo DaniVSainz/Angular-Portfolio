@@ -6,6 +6,7 @@ import { NgaModule } from '../../theme/nga.module';
 import { ProjectsComponent } from './projects.component';
 import { routing } from './projects.routing';
 import { CurrentProjectComponent } from './current-project/current-project.component';
+import { JavascriptComponent } from './javascript/javascript.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { CurrentProjectComponent } from './current-project/current-project.compo
   ],
   declarations: [
     ProjectsComponent,
-    CurrentProjectComponent
+    CurrentProjectComponent,
+    JavascriptComponent
   ]
 })
 export class ProjectsModule {
