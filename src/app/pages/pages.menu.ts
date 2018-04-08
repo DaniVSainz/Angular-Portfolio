@@ -2,18 +2,18 @@ export const PAGES_MENU = [
   {
     path: 'pages',
     children: [
-      {
-        path: 'resume',
-        data: {
-          menu: {
-            title: 'Resume',
-            icon: 'ion-clipboard',
-            selected: false,
-            expanded: false,
-            order: 0
-          }
-        }
-      },
+      // {
+      //   path: 'resume',
+      //   data: {
+      //     menu: {
+      //       title: 'Resume',
+      //       icon: 'ion-clipboard',
+      //       selected: false,
+      //       expanded: false,
+      //       order: 0
+      //     }
+      //   }
+      // },
       {
         path: 'projects',
         title: 'Projects & Skills',
