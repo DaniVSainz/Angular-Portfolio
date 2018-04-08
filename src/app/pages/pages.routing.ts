@@ -14,7 +14,6 @@ export const routes: Routes = [
       { path: '', redirectTo: 'about', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule' },
-      { path: 'resume', component:ResumeComponent },
       { path: 'about', loadChildren: './danielAbout/danielAbout.module#DanielAboutModule' }
       // { path: 'ruby', loadChildren: '.ruby/ruby.module#RubyModule'}
 
