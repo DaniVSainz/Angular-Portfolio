@@ -89,8 +89,8 @@ export class LandingComponent implements OnInit {
       'Welcome to my Portfolio!',
       'My name is Daniel',
       "I'm absolutely passionate about programming",
-      "This has led me to a github with 2000~ commits the last year in just personal projects",
-      "But that's okay because I love it!",
+      "This led me to a github with thousands of commits the last year in just personal projects",
+      "But i love it, and havent found something i'd rather spend my time on more.",
       "Thanks for visiting!,Bye!",
       // 'between knowing the path',
       // 'and walking the path'
@@ -106,9 +106,9 @@ export class LandingComponent implements OnInit {
         fx.setText(phrases[counter]).then(() => {
         setTimeout(next, 1000)
       })
-      }else if( counter == 3 ){
+      }else if( counter == 3 || counter == 4){
         fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 1900)
+        setTimeout(next, 2100)
         })
       }else{
         $('.text').remove();
