@@ -26,18 +26,18 @@ export const PAGES_MENU = [
               }
             }
           },
-          {
-            path: 'currentproject',
-            data: {
-              menu: {
-                title: 'Current Project',
-                icon: '',
-                selected: false,
-                expanded: false,
-                order: 0
-              }
-            }
-          },
+          // {
+          //   path: 'currentproject',
+          //   data: {
+          //     menu: {
+          //       title: 'Current Project',
+          //       icon: '',
+          //       selected: false,
+          //       expanded: false,
+          //       order: 0
+          //     }
+          //   }
+          // },
           {
             path: 'javascript',
             data: {
@@ -50,24 +50,24 @@ export const PAGES_MENU = [
               }
             }
           },
-          {
-            path: 'ruby',
-            data: {
-              menu: {
-                title: 'Ruby On Rails',
-              }
-            },
-            children: [
-          {
-            path: 'ruby/relicious',
-            data: {
-              menu: {
-                title: ' Relicious',
-              }
-            },
-          }
-        ]
-          }
+        //   {
+        //     path: 'ruby',
+        //     data: {
+        //       menu: {
+        //         title: 'Ruby On Rails',
+        //       }
+        //     },
+        //     children: [
+        //   {
+        //     path: 'ruby/relicious',
+        //     data: {
+        //       menu: {
+        //         title: ' Relicious',
+        //       }
+        //     },
+        //   }
+        // ]
+        //   }
         ]
       },
       {
