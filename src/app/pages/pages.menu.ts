@@ -50,13 +50,13 @@ export const PAGES_MENU = [
               }
             }
           },
-        //   {
-        //     path: 'ruby',
-        //     data: {
-        //       menu: {
-        //         title: 'Ruby On Rails',
-        //       }
-        //     },
+          {
+            path: 'ruby',
+            data: {
+              menu: {
+                title: 'Ruby On Rails',
+              }
+            },
         //     children: [
         //   {
         //     path: 'ruby/relicious',
@@ -67,7 +67,7 @@ export const PAGES_MENU = [
         //     },
         //   }
         // ]
-        //   }
+          }
         ]
       },
       {
