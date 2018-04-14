@@ -15,7 +15,7 @@
   "scripts": {
     "rimraf": "rimraf",
     "ng": "ng",
-    "start": "http-server -p 3001 dist/",
+    "start": "http-server -p 3002 dist/",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
