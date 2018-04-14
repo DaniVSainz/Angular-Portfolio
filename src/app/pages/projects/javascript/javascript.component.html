@@ -74,6 +74,33 @@
                             if I never stopped developing the site.I didn't want to write a ton of code for my automatic
                             jobs to later find that I had to change the database and code significantly
                         </p>
+                        <h5 class="cadetblue">Second problem</h5>
+                        <p>
+                            The second problem I ran into was that I wanted the data to be scraped consistently, more specifically every 5 minutes.I
+                            also knew that for the node backend version this would completely block requests a large portion
+                            of the time it was running.
+                            <br>
+                            One of the scripts goes through 300 endpoints.I looked at a lot of
+                            packages and quickly found that I was overcomplicating something that could be very simple so
+                            I decided to just use cron to schedule forked node processes that ran the scripts.
+                            <br>
+                            For ruby,
+                            I used whenever a Ruby gem that provides a clear syntax for writing and deploying
+                            cron jobs. When running the scripts for the first time on a fresh database, it actually seeds
+                            over 47,000 days of data.
+                        </p>
+                        <h5 class="cadetblue">Ruby scraper</h5>
+                        <div class="video-responsive">
+                            <iframe width="560" class="iframe-center" height="315" src="https://www.youtube.com/embed/wZy0ce43sNM" frameborder="0" allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="cadetblue">NodeJs scraper</h5>
+                        <div class="video-responsive">
+                            <iframe width="560" class="iframe-center" height="315" src="https://www.youtube.com/embed/PID9wQMYIRs" frameborder="0" allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
