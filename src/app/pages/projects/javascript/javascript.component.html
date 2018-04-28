@@ -78,10 +78,10 @@
                         <p>
                             The second problem I ran into was that I wanted the data to be scraped consistently, more specifically every 5 minutes.I
                             also knew that for the node backend version this would completely block requests a large portion
-                            of the time it was running.When running the scripts for the first time on a fresh database, it seeds
-                            over 47,000 days of data.
+                            of the time it was running.When running the scripts for the first time on a fresh database it seeds
+                            over 47,000 days of data while going through 300 endpoints.
                             <br>
-                            One of the scripts goes through 300 endpoints.I looked at a lot of
+                            I looked at a lot of
                             packages and quickly found that I was overcomplicating something that could be very simple so
                             I decided to just use cron to schedule forked node processes that ran the scripts.
                             <br>
@@ -162,7 +162,7 @@
         </div>
     </div>
 
-    <!-- <div class="card">
+    <div class="card">
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <h5 class="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -223,5 +223,5 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
