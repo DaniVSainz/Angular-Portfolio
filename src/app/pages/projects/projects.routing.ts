@@ -1,3 +1,4 @@
+import { AngularComponent } from './angular/angular.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { CurrentProjectComponent } from './current-project/current-project.component';
 import { Routes, RouterModule }  from '@angular/router';
@@ -17,6 +18,7 @@ export const routes: Routes = [
       { path: 'ruby', loadChildren: './ruby/ruby.module#RubyModule'},
       { path: 'currentproject', component:CurrentProjectComponent},
       { path: 'javascript', component:JavascriptComponent},
+      { path: 'angular', component:AngularComponent},
       { path: 'projectspage', loadChildren: './projectsPage/projects-page.module#ProjectsPageModule'}
     ]
   }
