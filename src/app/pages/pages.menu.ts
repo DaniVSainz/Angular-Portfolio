@@ -51,12 +51,25 @@ export const PAGES_MENU = [
             }
           },
           {
+            path: 'vue',
+            data: {
+              menu: {
+                title: 'Vue Projects',
+                icon: '',
+                selected: false,
+                expanded: false,
+                order: 0
+              }
+            }
+          },
+          {
             path: 'ruby',
             data: {
               menu: {
                 title: 'Ruby On Rails',
               }
             },
+            
         //     children: [
         //   {
         //     path: 'ruby/relicious',
