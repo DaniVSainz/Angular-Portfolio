@@ -5,6 +5,7 @@ import { Routes, RouterModule }  from '@angular/router';
 
 import { ProjectsComponent } from './projects.component';
 import { ModuleWithProviders } from '@angular/core';
+import { VueComponent } from './vue/vue.component';
 
 
 // noinspection TypeScriptValidateTypes
@@ -19,6 +20,7 @@ export const routes: Routes = [
       { path: 'currentproject', component:CurrentProjectComponent},
       { path: 'javascript', component:JavascriptComponent},
       { path: 'angular', component:AngularComponent},
+      { path: 'vue', component:VueComponent},
       { path: 'projectspage', loadChildren: './projectsPage/projects-page.module#ProjectsPageModule'}
     ]
   }

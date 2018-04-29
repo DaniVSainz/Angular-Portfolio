@@ -8,6 +8,7 @@ import { routing } from './projects.routing';
 import { CurrentProjectComponent } from './current-project/current-project.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { AngularComponent } from './angular/angular.component';
+import { VueComponent } from './vue/vue.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { AngularComponent } from './angular/angular.component';
     ProjectsComponent,
     CurrentProjectComponent,
     JavascriptComponent,
-    AngularComponent
+    AngularComponent,
+    VueComponent
   ]
 })
 export class ProjectsModule {
