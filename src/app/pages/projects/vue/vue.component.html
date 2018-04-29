@@ -1,3 +1,101 @@
-<p>
-  vue works!
-</p>
+<div id="accordion">
+  <div class="card">
+      <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+              <h5 class="cadetblue" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  CryptoNalysis
+              </h5>
+          </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+              <div class="vid-container">
+                  <div class="video-responsive">
+                      <iframe width="560" class="iframe-center" height="315" src="https://www.youtube.com/embed/Fo6AwUtthCw" frameborder="0" allow="autoplay; encrypted-media"
+                          allowfullscreen>
+                      </iframe>
+                  </div>
+              </div>
+              <div class="">
+                  <div class="my-div">
+
+                      <h5 class="cadetblue">About</h5>
+                      <p>
+                          This website came about while I was looking for a project that I could feel passionate about to showcase some of my skills.
+                          I didn't ever expect it to end up being as complicated as it was but I felt like I had to go
+                          through with it since I started. I had to research multiple cryptocurrency exchange websites
+                          and go through their API's to get a general idea of what the data I would be scraping
+                      </p>
+                      <h5 class="cadetblue">Mean stack app</h5>
+                      <ul>
+                          <li>Mean Stack Front End with backend containing User Auth</li>
+                          <li>Authentication via JWT using passportJs</li>
+                          <li>Bcrypt Salted/Hashed password storage.</li>
+                          <li>MongoDB database using mongoose ODM</li>
+                          <li>Email service using NodeEmailer for verification/password reset emails</li>
+                          <li>Echarts for charting Day/Price for cryptocurrencies.</li>
+                          <li>Angular5 frontend</li>
+                          <li>Nebular + Bootstrap for frontend components</li>
+                          <li>Angular Service worker for asset/data caching enabling the site to be served fully with cached
+                              data while offine.
+                              <br> Aswell as increasing loading times significantly
+                          </li>
+                      </ul>
+                      <h5 class="cadetblue">Data Api</h5>
+                      <ul>
+                          <li>Backend was written in Ruby on Rails then once more In Node+Express as I wanted to maintain my
+                              skills in both languages.</li>
+                          <li>Connects to multiple api's with cron jobs triggering functions scraping data for approx 1560
+                              crypto currencies</li>
+                          <li>Databases: Ruby version: PostgreSQL, Node/Express version: MongoDB</li>
+                      </ul>
+                      <h5 class="cadetblue">Challenges</h5>
+                      <p>
+                          One of the bigger challenges was the database design since I knew all of the different cryptocurrency exchange website API's
+                          I had in mind would not have consistent data across the board. </p>
+                      <div class="flex-it">
+                          <img src="assets/images/cryptonalysis/db-design.PNG" class="img-fluid des-img" alt="">
+                      </div>
+                      <p>
+                          While many of these connections went unused, I sat down and thought of all the possible scenarios I could run into long-term
+                          if I never stopped developing the site.I didn't want to write a ton of code for my automatic
+                          jobs to later find that I had to change the database and code significantly
+                      </p>
+                      <h5 class="cadetblue">Second problem</h5>
+                      <p>
+                          The second problem I ran into was that I wanted the data to be scraped consistently, more specifically every 5 minutes.I
+                          also knew that for the node backend version this would completely block requests a large portion
+                          of the time it was running.When running the scripts for the first time on a fresh database it seeds
+                          over 47,000 days of data while going through 300 endpoints.
+                          <br>
+                          I looked at a lot of
+                          packages and quickly found that I was overcomplicating something that could be very simple so
+                          I decided to just use cron to schedule forked node processes that ran the scripts.
+                          <br>
+                          For ruby,
+                          I used whenever a Ruby gem that provides a clear syntax for writing and deploying
+                          cron jobs. 
+                      </p>
+                      <h5 class="cadetblue">Ruby scraper</h5>
+                      <div class="vid-container">
+                          <div class="video-responsive">
+                              <iframe width="560" class="iframe-center" height="315" src="https://www.youtube.com/embed/cKCyVGlt8c4" frameborder="0" allow="autoplay; encrypted-media"
+                                  allowfullscreen>
+                              </iframe>
+                          </div>
+                      </div>
+                      <h5 class="cadetblue">NodeJs scraper</h5>
+                      <div class="vid-container">
+                          <div class="video-responsive">
+                              <iframe width="560" class="iframe-center" height="315" src="https://www.youtube.com/embed/PID9wQMYIRs" frameborder="0" allow="autoplay; encrypted-media"
+                                  allowfullscreen>
+                              </iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
